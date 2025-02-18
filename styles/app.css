@@ -115,11 +115,11 @@ App styles
   -ms-border-radius: 5rem;
   -o-border-radius: 5rem;
   background-color: var(--orange);
-  transition: all 250ms ease-in-out;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
 }
 
 .nav__btn-line::before,
@@ -134,11 +134,11 @@ App styles
   -moz-border-radius: 5rem;
   -ms-border-radius: 5rem;
   -o-border-radius: 5rem;
-  transition: all 250ms ease-in-out;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
 }
 
 .nav__btn-line::before {
@@ -147,4 +147,24 @@ App styles
 
 .nav__btn-line::after {
   top: 0.8rem;
+}
+
+.nav__btn--open .nav__btn-line {
+  background-color: transparent;
+}
+
+.nav__btn--open .nav__btn-line::before {
+  transform: translateY(0.8rem) rotate(45deg);
+  -webkit-transform: translateY(0.8rem) rotate(45deg);
+  -moz-transform: translateY(0.8rem) rotate(45deg);
+  -ms-transform: translateY(0.8rem) rotate(45deg);
+  -o-transform: translateY(0.8rem) rotate(45deg);
+}
+
+.nav__btn--open .nav__btn-line::after {
+  transform: translateY(-0.8rem) rotate(-45deg);
+  -webkit-transform: translateY(-0.8rem) rotate(-45deg);
+  -moz-transform: translateY(-0.8rem) rotate(-45deg);
+  -ms-transform: translateY(-0.8rem) rotate(-45deg);
+  -o-transform: translateY(-0.8rem) rotate(-45deg);
 }
