@@ -16,20 +16,11 @@
   .container {
     width: 72rem;
   }
-  .nav__btn {
-    display: none;
-  }
-  .menu {
-    display: flex;
-  }
 }
 
 @media (min-width: 992px) {
   .container {
     width: 96rem;
-  }
-  .header__links {
-    display: block;
   }
 }
 

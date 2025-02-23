@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .nav__btn {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__links {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1700px) {
+}
