@@ -1,6 +1,7 @@
 :root {
   --orange: #e76f51;
   --withe: #ffffff;
+  --grey: #d2d2d2;
 }
 
 html {
@@ -54,7 +55,12 @@ App styles
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 2.5rem 0;
+}
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 .logo-app {
   display: block;
@@ -68,10 +74,12 @@ App styles
 }
 .menu {
   display: none;
+  gap: 2rem;
 }
 .menu__item {
 }
 .menu__link {
+  color: var(--grey);
 }
 .nav-menu {
   width: 25rem;
@@ -116,8 +124,17 @@ App styles
   display: none;
 }
 .header__link {
+  color: var(--withe);
+  font-family: "Roboto-Medium";
+  padding: 1rem 2rem;
 }
 .header__link--border {
+  border: 0.1rem solid var(--withe);
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
 }
 .nav__btn {
   display: flex;
