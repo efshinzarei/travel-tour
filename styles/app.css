@@ -2,7 +2,7 @@
   --orange: #e76f51;
   --withe: #ffffff;
   --grey: #d2d2d2;
-  --dark: --#3b3735
+  --dark: --#3b3735;
 }
 
 html {
@@ -23,7 +23,11 @@ body {
 }
 
 /* 
-Reset Styles
+
+================
+  Reset Styles
+================
+
 */
 
 a {
@@ -35,22 +39,38 @@ ul {
 }
 
 /* 
-Helper Classes
+
+==================
+  Helper Classes
+==================
+
 */
 
 /* 
-App styles
+
+==============
+  App Styles
+==============
+
 */
 
 .header {
+  min-height: 55rem;
   background: linear-gradient(90deg, rgb(59 55 53 / 50%), rgb(59 55 53 / 50%)),
     url("../images/header-bg.jpg");
   background-position: center;
   background-size: cover;
-  min-height: 55rem;
   border-bottom-left-radius: 10rem;
   border-bottom-right-radius: 10rem;
 }
+
+/* 
+
+=======
+  Nav
+=======
+
+*/
 
 .nav {
   display: flex;
@@ -58,27 +78,45 @@ App styles
   align-items: center;
   padding: 2.5rem 0;
 }
+
 .nav__wrapper {
   display: flex;
   align-items: center;
   gap: 4rem;
 }
+
+/* 
+
+=============
+  App logo
+=============
+
+*/
+
 .app-logo {
   display: block;
   width: 5.5rem;
   height: 5.5rem;
 }
+
 .app-logo__img {
   width: 100%;
-
   height: 100%;
 }
+
+/* 
+
+=============
+  Main Menu
+=============
+
+*/
+
 .menu {
   display: none;
   gap: 2rem;
 }
-.menu__item {
-}
+
 .menu__link {
   color: var(--grey);
   transition: color 100ms ease-in;
@@ -87,25 +125,26 @@ App styles
   -ms-transition: color 100ms ease-in;
   -o-transition: color 100ms ease-in;
 }
-.menu__link:hover{
+
+.menu__link:hover {
   color: var(--withe);
 }
 
-.menu__link--active{
+.menu__link--active {
   color: var(--withe);
   position: relative;
   z-index: 1;
-
 }
+
 .menu__link--active::before {
   content: "";
+  width: 4rem;
+  height: 0.3rem;
   position: absolute;
   top: 0.7rem;
   right: 0;
   left: 0;
   margin: 0 auto;
-  width: 4rem;
-  height: 0.3rem;
   border-radius: 10rem;
   -webkit-border-radius: 10rem;
   -moz-border-radius: 10rem;
@@ -119,6 +158,15 @@ App styles
   background-color: var(--orange);
   z-index: -1;
 }
+
+/* 
+
+===================
+  Navigation Menu
+===================
+
+*/
+
 .nav-menu {
   width: 25rem;
   position: fixed;
@@ -133,41 +181,71 @@ App styles
   -ms-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
 }
+
 .nav-menu--open {
   left: 0;
 }
+
+/* 
+
+========================
+  Mobile Menu(Desktop)
+========================
+
+*/
+
 .mobile-menu {
   margin-bottom: 3rem;
 }
+
 .mobile-menu__item {
   margin-bottom: 1rem;
 }
+
 .mobile-menu__link {
   color: var(--withe);
 }
+
+/* 
+
+=============
+  Nav Links
+=============
+
+*/
+
 .mobile-menu__links {
   display: flex;
 }
+
 .nav-menu__link {
   flex-grow: 1;
   padding: 1rem;
   text-align: center;
-
   color: var(--withe);
   border: 0.1rem solid var(--withe);
 }
-.nav-menu__link--border {
-}
+
+/* 
+
+===============
+  Header Links
+===============
+
+*/
+
 .header__links {
   display: none;
 }
+
 .header__link {
-  color: var(--withe);
   font-family: "Roboto-Medium";
-  
-  
+  color: var(--withe);
 }
+
 .header__link--border {
+  padding: 1rem 2rem;
+  margin-left: 2rem;
   border: 0.1rem solid var(--withe);
   border-radius: 10rem;
   -webkit-border-radius: 10rem;
@@ -179,19 +257,27 @@ App styles
   -moz-transition: all 100ms ease-in;
   -ms-transition: all 100ms ease-in;
   -o-transition: all 100ms ease-in;
-  padding: 1rem 2rem;
-  margin-left: 2rem;
 }
-.header__link--border:hover{
+
+.header__link--border:hover {
   background-color: var(--withe);
   color: var(--dark);
 }
+
+/* 
+
+=============
+  Nav Btn
+=============
+
+*/
+
 .nav__btn {
+  width: 5.5rem;
+  height: 5.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5.5rem;
-  height: 5.5rem;
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
@@ -199,10 +285,11 @@ App styles
   -o-border-radius: 2rem;
   background-color: var(--withe);
 }
+
 .nav__btn-line {
-  display: block;
   width: 3rem;
   height: 0.3rem;
+  display: block;
   position: relative;
   border-radius: 5rem;
   -webkit-border-radius: 5rem;
