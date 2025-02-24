@@ -2,6 +2,7 @@
   --orange: #e76f51;
   --withe: #ffffff;
   --grey: #d2d2d2;
+  --dark: --#3b3735
 }
 
 html {
@@ -60,9 +61,9 @@ App styles
 .nav__wrapper {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
 }
-.logo-app {
+.app-logo {
   display: block;
   width: 5.5rem;
   height: 5.5rem;
@@ -80,6 +81,43 @@ App styles
 }
 .menu__link {
   color: var(--grey);
+  transition: color 100ms ease-in;
+  -webkit-transition: color 100ms ease-in;
+  -moz-transition: color 100ms ease-in;
+  -ms-transition: color 100ms ease-in;
+  -o-transition: color 100ms ease-in;
+}
+.menu__link:hover{
+  color: var(--withe);
+}
+
+.menu__link--active{
+  color: var(--withe);
+  position: relative;
+  z-index: 1;
+
+}
+.menu__link--active::before {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 4rem;
+  height: 0.3rem;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  background-color: var(--orange);
+  z-index: -1;
 }
 .nav-menu {
   width: 25rem;
@@ -126,7 +164,8 @@ App styles
 .header__link {
   color: var(--withe);
   font-family: "Roboto-Medium";
-  padding: 1rem 2rem;
+  
+  
 }
 .header__link--border {
   border: 0.1rem solid var(--withe);
@@ -135,6 +174,17 @@ App styles
   -moz-border-radius: 10rem;
   -ms-border-radius: 10rem;
   -o-border-radius: 10rem;
+  transition: all 100ms ease-in;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  -ms-transition: all 100ms ease-in;
+  -o-transition: all 100ms ease-in;
+  padding: 1rem 2rem;
+  margin-left: 2rem;
+}
+.header__link--border:hover{
+  background-color: var(--withe);
+  color: var(--dark);
 }
 .nav__btn {
   display: flex;
