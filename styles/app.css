@@ -3,6 +3,9 @@
   --withe: #ffffff;
   --grey: #d2d2d2;
   --dark: #3b3735;
+  --primary-font: Roboto-Regular, Arial, Helvetica, sans-serif;
+  --primary-font-md: Roboto-Medium, Arial, Helvetica, sans-serif;
+  --secondary-font: Archivo-Black, Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -17,7 +20,7 @@ html {
 }
 
 body {
-  font-family: "Roboto-Regular";
+  font-family: var(--primary-font);
   font-size: 1.6rem;
   line-height: 1.6;
 }
@@ -63,7 +66,7 @@ ul {
   height: 5rem;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Roboto-Medium";
+  font-family: var(--primary-font-md);
   border-radius: 10rem;
   -webkit-border-radius: 10rem;
   -moz-border-radius: 10rem;
@@ -288,7 +291,7 @@ ul {
   width: 20rem;
   margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
-  font-family: "Archivo-Black";
+  font-family: var(--secondary-font);
   font-size: 2rem;
   text-align: center;
   color: var(--withe);
@@ -329,7 +332,7 @@ ul {
 }
 
 .nav__link {
-  font-family: "Roboto-Medium";
+  font-family: var(--primary-font-md);
   color: var(--withe);
 }
 
@@ -462,7 +465,7 @@ ul {
 
 .header-content__title {
   max-width: 34.5rem;
-  font-family: "Archivo-Black";
+  font-family: var(--secondary-font);
   font-size: 5rem;
   line-height: 6rem;
   margin-bottom: 1rem;
