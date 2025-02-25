@@ -19,7 +19,7 @@
 }
 
 @media (min-width: 992px) {
-  .header__links {
+  .nav__links {
     display: block;
   }
 }

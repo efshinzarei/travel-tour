@@ -32,6 +32,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -48,6 +49,30 @@ ul {
 
 /* 
 
+==================
+  Helper Classes
+==================
+
+*/
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18rem;
+  height: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto-Medium";
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+}
+
+/* 
+
 ==============
   App Styles
 ==============
@@ -55,7 +80,7 @@ ul {
 */
 
 .header {
-  min-height: 55rem;
+  min-height: 80vh;
   background: linear-gradient(90deg, rgb(59 55 53 / 50%), rgb(59 55 53 / 50%)),
     url("../images/header-bg.jpg");
   background-position: center;
@@ -234,17 +259,17 @@ ul {
 
 */
 
-.header__links {
+.nav__links {
   display: none;
 }
 
-.header__link {
+.nav__link {
   font-family: "Roboto-Medium";
   color: var(--withe);
 }
 
-.header__link--border {
-  padding: 1rem 2rem;
+.nav__link--border {
+  padding: 1rem 2.5rem;
   margin-left: 2rem;
   border: 0.1rem solid var(--withe);
   border-radius: 10rem;
@@ -259,7 +284,7 @@ ul {
   -o-transition: all 100ms ease-in;
 }
 
-.header__link--border:hover {
+.nav__link--border:hover {
   background-color: var(--withe);
   color: var(--dark);
 }
@@ -349,4 +374,43 @@ ul {
   -moz-transform: translateY(-0.8rem) rotate(-45deg);
   -ms-transform: translateY(-0.8rem) rotate(-45deg);
   -o-transform: translateY(-0.8rem) rotate(-45deg);
+}
+
+/* 
+
+==================
+  Header Content
+==================
+
+*/
+
+.header-content {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem; 
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--withe);
+}
+
+.header-content__title {
+  font-family: "Archivo-Black";
+  font-size: 5rem;
+  line-height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.header-content__caption {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.header-content__br1 {
+  display: none;
+}
+
+.header-content__link {
+  background-color: var(--orange);
 }
