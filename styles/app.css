@@ -2,7 +2,7 @@
   --orange: #e76f51;
   --withe: #ffffff;
   --grey: #d2d2d2;
-  --dark: --#3b3735;
+  --dark: #3b3735;
 }
 
 html {
@@ -49,9 +49,9 @@ ul {
 
 /* 
 
-==================
-  Helper Classes
-==================
+==============
+  Components
+==============
 
 */
 
@@ -69,6 +69,14 @@ ul {
   -moz-border-radius: 10rem;
   -ms-border-radius: 10rem;
   -o-border-radius: 10rem;
+}
+
+.mobile-menu__link--active{
+  padding-left: 2.2rem;
+}
+
+.mobile-menu__link--active::before{
+  width: 1.6rem !important;
 }
 
 /* 
@@ -199,7 +207,7 @@ ul {
   left: -25rem;
   bottom: 0;
   padding: 2.5rem;
-  background-color: rgb(114, 101, 101);
+  background: var(--dark);
   transition: all 250ms ease-in-out;
   -webkit-transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
@@ -229,7 +237,44 @@ ul {
 
 .mobile-menu__link {
   color: var(--withe);
+  position: relative;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
 }
+
+.mobile-menu__link::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 0.3rem;
+  background-color: var(--orange);
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+}
+
+.mobile-menu__link:hover{
+  padding-left: 2.2rem;
+}
+
+.mobile-menu__link:hover::before{
+  width: 1.6rem;
+}
+
 
 /* 
 
@@ -238,6 +283,17 @@ ul {
 =============
 
 */
+
+.nav-menu__title{
+  width: 20rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  font-family: "Archivo-Black";
+  font-size: 2rem;
+  text-align: center;
+  color: var(--withe);
+  border-bottom: 0.1rem solid var(--withe);
+}
 
 .mobile-menu__links {
   display: flex;
@@ -249,6 +305,15 @@ ul {
   text-align: center;
   color: var(--withe);
   border: 0.1rem solid var(--withe);
+  transition: all 100ms ease-in;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  -ms-transition: all 100ms ease-in;
+  -o-transition: all 100ms ease-in;
+}
+.nav-menu__link:hover{
+  background-color: var(--withe);
+  color: var(--dark);
 }
 
 /* 
@@ -309,6 +374,7 @@ ul {
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
   background-color: var(--withe);
+  z-index: 0;
 }
 
 .nav__btn-line {
