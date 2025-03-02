@@ -3,6 +3,7 @@
   --withe: #ffffff;
   --grey: #d2d2d2;
   --dark: #3b3735;
+  --app-bg: #faf4f2;
   --primary-font: Roboto-Regular, Arial, Helvetica, sans-serif;
   --primary-font-md: Roboto-Medium, Arial, Helvetica, sans-serif;
   --secondary-font: Archivo-Black, Arial, Helvetica, sans-serif;
@@ -23,6 +24,7 @@ body {
   font-family: var(--primary-font);
   font-size: 1.6rem;
   line-height: 1.6;
+  background-color: var(--app-bg);
 }
 
 /* 
@@ -74,11 +76,11 @@ ul {
   -o-border-radius: 10rem;
 }
 
-.mobile-menu__link--active{
+.mobile-menu__link--active {
   padding-left: 2.2rem;
 }
 
-.mobile-menu__link--active::before{
+.mobile-menu__link--active::before {
   width: 1.6rem !important;
 }
 
@@ -248,7 +250,7 @@ ul {
   -o-transition: all 250ms ease-in-out;
 }
 
-.mobile-menu__link::before{
+.mobile-menu__link::before {
   content: "";
   position: absolute;
   top: 0;
@@ -270,14 +272,13 @@ ul {
   -o-border-radius: 10rem;
 }
 
-.mobile-menu__link:hover{
+.mobile-menu__link:hover {
   padding-left: 2.2rem;
 }
 
-.mobile-menu__link:hover::before{
+.mobile-menu__link:hover::before {
   width: 1.6rem;
 }
-
 
 /* 
 
@@ -287,7 +288,7 @@ ul {
 
 */
 
-.nav-menu__title{
+.nav-menu__title {
   width: 20rem;
   margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
@@ -314,7 +315,7 @@ ul {
   -ms-transition: all 100ms ease-in;
   -o-transition: all 100ms ease-in;
 }
-.nav-menu__link:hover{
+.nav-menu__link:hover {
   background-color: var(--withe);
   color: var(--dark);
 }
@@ -479,4 +480,53 @@ ul {
 
 .header-content__link {
   background-color: var(--orange);
+}
+
+/* 
+
+------ Main ------
+
+*/
+
+.main {
+  
+}
+
+/* 
+
+=============
+  Services
+=============
+
+*/
+
+.services {
+  margin-top: -15rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.service {
+  height: 26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  text-align: center;
+  color: var(--dark);
+  background-color: var(--withe);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.service__title {
+  font-family: var(--secondary-font);
+  font-size: 1.8rem;
+  margin: 1.5rem 0 0.6rem 0;
+}
+.service__caption {
+  max-width: 28rem;
 }
