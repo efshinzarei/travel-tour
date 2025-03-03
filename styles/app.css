@@ -545,6 +545,11 @@ ul {
   text-align: center;
 }
 
+.destinations__logo{
+  width: 8rem;
+  height: 8rem;
+}
+
 .destinations__title {
   max-width: 36rem;
   margin: 3rem auto;
@@ -576,6 +581,7 @@ ul {
 
 .place {
   padding: 2rem;
+  overflow: hidden;
   background-color: var(--withe);
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
@@ -586,7 +592,6 @@ ul {
 
 .place__banner {
   position: relative;
-  height: 18rem;
 }
 
 .place__img {
