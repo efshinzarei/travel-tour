@@ -1,7 +1,9 @@
 :root {
-  --orange: #e76f51;
+  --primary-color: #e76f51;
+  --secondary-color: #f8e1db;
   --withe: #ffffff;
   --grey: #d2d2d2;
+  --grey-md: #757575;
   --dark: #3b3735;
   --app-bg: #faf4f2;
   --primary-font: Roboto-Regular, Arial, Helvetica, sans-serif;
@@ -18,6 +20,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 0;
+  border: 0;
 }
 
 body {
@@ -193,7 +197,7 @@ ul {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   z-index: -1;
 }
 
@@ -259,7 +263,7 @@ ul {
   margin: auto;
   width: 0;
   height: 0.3rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   transition: all 250ms ease-in-out;
   -webkit-transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
@@ -391,7 +395,7 @@ ul {
   -moz-border-radius: 5rem;
   -ms-border-radius: 5rem;
   -o-border-radius: 5rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   transition: all 150ms ease-in-out;
   -webkit-transition: all 150ms ease-in-out;
   -moz-transition: all 150ms ease-in-out;
@@ -405,7 +409,7 @@ ul {
   position: absolute;
   width: 3rem;
   height: 0.3rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   border-radius: 5rem;
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
@@ -479,7 +483,7 @@ ul {
 }
 
 .header-content__link {
-  background-color: var(--orange);
+  background-color: var(--primary-color);
 }
 
 /* 
@@ -487,8 +491,6 @@ ul {
 ------ Main ------
 
 */
-
-
 
 /* 
 
@@ -543,9 +545,10 @@ ul {
 .destinations {
   margin: 8rem 0 12rem;
   text-align: center;
+  color: var(--dark);
 }
 
-.destinations__logo{
+.destinations__logo {
   width: 8rem;
   height: 8rem;
 }
@@ -559,8 +562,8 @@ ul {
 
 .destinations__btn {
   margin-top: 5rem;
-  color: var(--orange);
-  border: 0.1rem solid var(--orange);
+  color: var(--primary-color);
+  border: 0.1rem solid var(--primary-color);
   transition: all 100ms ease-in;
   -webkit-transition: all 100ms ease-in;
   -moz-transition: all 100ms ease-in;
@@ -570,7 +573,7 @@ ul {
 
 .destinations__btn:hover {
   color: var(--app-bg);
-  background-color: var(--orange);
+  background-color: var(--primary-color);
 }
 
 .destinations__places {
@@ -624,7 +627,7 @@ ul {
 }
 
 .place__like-icon--fill {
-  fill: var(--orange);
+  fill: var(--primary-color);
 }
 
 .place__price {
@@ -648,7 +651,7 @@ ul {
 
 .place__price-text {
   font-family: var(--primary-font-md);
-  color: var(--orange);
+  color: var(--primary-color);
 }
 
 .place__title {
@@ -668,4 +671,85 @@ ul {
 .place__link {
   color: #8d8d8d;
   background-color: #8d8d8d1a;
+}
+
+/* 
+
+==============
+  Newsletter
+==============
+
+*/
+
+.newsletter {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--dark);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.newsletter__title {
+  min-width: 16rem;
+  margin: 1.5rem auto;
+  font-size: 3rem;
+  font-family: var(--secondary-font);
+}
+.newsletter__caption {
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+  font-family: var(--primary-font-md);
+}
+.newsletter__email-box {
+  position: relative;
+  height: 8rem;
+  padding: 1.5rem;
+  background-color: var(--withe);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.newsletter__form {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.newsletter__email-icon {
+  height: 2.5rem;
+  flex-shrink: 0;
+}
+.newsletter__input {
+  width: 100%;
+  height: 100%;
+  padding: 0.2rem 0 0 0;
+  font-size: 1.6rem;
+  color: var(--grey-md);
+}
+.newsletter__submit {
+  width: 5rem;
+  height: 5rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 1.5rem #e76f5166;
+  background: var(--primary-color);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  cursor: pointer;
+}
+.newsletter__img {
+  width: 85%;
 }
