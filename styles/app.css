@@ -29,6 +29,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   background-color: var(--app-bg);
+  overflow-x: hidden;
 }
 
 /* 
@@ -499,6 +500,9 @@ ul {
 =============
 
 */
+/* .main {
+  position: relative;
+} */
 
 .services {
   display: grid;
@@ -546,6 +550,28 @@ ul {
   margin: 8rem 0 12rem;
   text-align: center;
   color: var(--dark);
+  position: relative;
+}
+
+.destinations::before,.destinations::after{
+  content: "";
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+}
+.destinations::before{
+  background-image: url("../images/svgs/shape1.svg");
+  top: -21rem;
+  right: -40rem;
+}
+.destinations::after{
+  background-image: url("../images/svgs/shape2.svg");
+  bottom: 40rem;
+    left: -40rem;
 }
 
 .destinations__logo {

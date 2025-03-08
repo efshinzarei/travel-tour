@@ -64,6 +64,9 @@
   .menu {
     display: flex;
   }
+  .destinations::after{
+      left: -35rem;
+  }
   .newsletter {
     flex-direction: row;
     justify-content: center;
@@ -148,6 +151,10 @@
 }
 
 @media (min-width: 1400px) {
+  .destinations::after{
+    bottom: 35rem;
+    left: -40rem;
+  }
   .newsletter::before {
     right: 50rem;
   }
