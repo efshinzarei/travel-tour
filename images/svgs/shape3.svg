@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1518" height="390" viewBox="0 0 1518 390"><defs><linearGradient id="a" x1="0.971" y1="0.622" x2="0.142" y2="0.592" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff0ec"/></linearGradient><clipPath id="b"><rect width="1518" height="390" rx="20" fill="url(#a)"/></clipPath><linearGradient id="c" x1="0.102" y1="0.459" x2="1.115" y2="0.475" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#ffd2c6"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><g clip-path="url(#b)"><path d="M519.044,1000.568c286.66,0,653.871-523.406,308.75-523.406S805.7,0,519.044,0,0,223.985,0,500.284,232.384,1000.568,519.044,1000.568Z" transform="translate(-118.114 -385.284)" fill="url(#c)"/></g></svg>
+<svg width="968" height="1001" viewBox="0 0 968 1001" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M519.044 1000.57C805.704 1000.57 1172.92 477.162 827.794 477.162C482.673 477.162 805.7 0 519.044 0C232.388 0 0 223.985 0 500.284C0 776.583 232.384 1000.57 519.044 1000.57Z" fill="url(#paint0_linear_9_1466)"/>
+<defs>
+<linearGradient id="paint0_linear_9_1466" x1="98.7022" y1="459.261" x2="1078.97" y2="474.235" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD2C6"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>
