@@ -43,7 +43,10 @@
 
 @media (min-width: 576px) {
   .newsletter::before {
-    top: -10rem;
+    width: 100rem;
+    height: 100rem;
+    top: -20rem;
+    right: 5rem;
   }
   .newsletter__img {
     width: 90%;
@@ -64,8 +67,8 @@
   .menu {
     display: flex;
   }
-  .destinations::after{
-      left: -35rem;
+  .destinations::after {
+    left: -35rem;
   }
   .newsletter {
     flex-direction: row;
@@ -151,7 +154,7 @@
 }
 
 @media (min-width: 1400px) {
-  .destinations::after{
+  .destinations::after {
     bottom: 35rem;
     left: -40rem;
   }
