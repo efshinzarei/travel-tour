@@ -102,6 +102,9 @@
   .header-content__caption {
     max-width: 50rem;
   }
+  .service--width{
+    grid-column: 1/4;
+  }
   .newsletter {
     padding: 3rem;
   }
@@ -154,6 +157,9 @@
 }
 
 @media (min-width: 1400px) {
+  .service--width{
+    grid-column: auto;
+  }
   .destinations::after {
     bottom: 35rem;
     left: -40rem;
