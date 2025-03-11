@@ -1148,7 +1148,7 @@ ul {
 */
 
 @media (max-width: 375px) {
-  .hontainer {
+  .container {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -1182,6 +1182,9 @@ ul {
 }
 
 @media (min-width: 576px) {
+  .container {
+    width: 54rem;
+  }
   .newsletter::before {
     width: 100rem;
     height: 100rem;
@@ -1200,6 +1203,9 @@ ul {
 }
 
 @media (min-width: 768px) {
+  .container {
+    width: 72rem;
+  }
   .nav__btn,
   .nav-menu {
     display: none;
@@ -1236,6 +1242,9 @@ ul {
 }
 
 @media (min-width: 992px) {
+  .container {
+    width: 96rem;
+  }
   .nav__links {
     display: block;
   }
@@ -1270,6 +1279,9 @@ ul {
 }
 
 @media (min-width: 1200px) {
+  .container {
+    width: 114rem;
+  }
   .newsletter {
     justify-content: space-between;
     padding-left: 6rem;
@@ -1297,6 +1309,9 @@ ul {
 }
 
 @media (min-width: 1400px) {
+  .container {
+    width: 134rem;
+  }
   .service--width {
     grid-column: auto;
   }
@@ -1316,6 +1331,9 @@ ul {
 }
 
 @media (min-width: 1700px) {
+  .container {
+    width: 167rem;
+  }
   .destinations__places {
     grid-template-columns: repeat(4, 1fr);
   }
