@@ -1,7 +1,7 @@
 
 **You can see information about my project**
 
-- ![viewfinal](https://github.com/efshinzarei/travel-tour/images/finalview)
+- ![viewfinal](./images/finalview)
 
 - [Demo Project](https://efshinzarei.github.io/travel-tour/)
 
