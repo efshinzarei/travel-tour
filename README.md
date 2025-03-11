@@ -9,4 +9,4 @@
 
 - Role - Frontend
 
-- How to reach me : with my [instagram](https://www.telegram.com/afshinzarei) and [telegram](https://www.linkedin.com/in/ladan-hazrati-web)
+- How to reach me : with my [instagram](https://www.instagram.com/afshinzarei.net) and [telegram](https://www.telegram.me/afshinzareinet)
