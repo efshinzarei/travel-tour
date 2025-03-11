@@ -1071,6 +1071,7 @@ ul {
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
   background-color: var(--withe);
+  box-shadow: 0 0 1rem rgba(59, 55, 53,0.05);
 }
 
 .footer__wrapper {
