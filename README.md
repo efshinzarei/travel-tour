@@ -3,7 +3,7 @@
 
 # template-travel-agency
 
-- [![viewfinal](https://imgur.com/a/oAIaOcg)](https://efshinzarei.github.io/travel-tour/)
+- [![viewfinal](https://github.com/efshinzarei/travel-tour/issues/1#issue-2911539880)](https://efshinzarei.github.io/travel-tour/)
 
 - [Demo Project](https://efshinzarei.github.io/travel-tour/)
 
