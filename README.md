@@ -1,7 +1,9 @@
 
 **You can see information about my project**
 
-- ![viewfinal](./images/finalview)
+# template-travel-agency
+
+- [![viewfinal](https://imgur.com/a/oAIaOcg)](https://efshinzarei.github.io/travel-tour/)
 
 - [Demo Project](https://efshinzarei.github.io/travel-tour/)
 
