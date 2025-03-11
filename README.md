@@ -1,9 +1,9 @@
 
+# template-travel-tour
+
+![viewfinal](https://github.com/efshinzarei/travel-tour/issues/1#issue-2911539880)
+
 **You can see information about my project**
-
-# template-travel-agency
-
-- [![viewfinal](https://github.com/efshinzarei/travel-tour/issues/1#issue-2911539880)](https://efshinzarei.github.io/travel-tour/)
 
 - [Demo Project](https://efshinzarei.github.io/travel-tour/)
 
