@@ -202,6 +202,7 @@ table {
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 10px */
+  scroll-behavior: smooth;
 }
 
 *,
@@ -219,6 +220,26 @@ body {
   background-color: var(--app-bg);
   overflow-x: hidden;
 }
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+  
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  border: 1rem solid var(--primary-color);
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
 
 .container {
   width: 100%;
@@ -279,7 +300,7 @@ ul {
 .btn:hover {
   background-color: var(--withe);
   color: #e76f51;
-  border: 2px solid var(--primary-color);
+  border: 0.2rem solid var(--primary-color);
 }
 
 /* 
@@ -762,8 +783,8 @@ ul {
 .destinations::before,
 .destinations::after {
   content: "";
-  width: 600px;
-  height: 600px;
+  width: 60rem;
+  height: 60rem;
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
